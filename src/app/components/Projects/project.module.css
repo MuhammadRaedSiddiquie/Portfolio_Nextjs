@@ -1,0 +1,131 @@
+.section {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    background-color: #0a0a0a;
+    z-index: 1;
+    position: relative;
+    flex-direction: column;
+}
+.section>:nth-child(1){
+    font-family: monument extended;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.projects {
+    width: 95vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    height: 420px;
+    padding: 0px 25px;
+}
+
+
+.card {
+    height: 200px;
+    width: 315px;
+    background-color: var(--secondary-color);
+    border-right: 1px solid var(--neon-color);
+    border-left: 1px solid var(--neon-color);
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+    box-shadow: 2px 0px 3px 0px var(--neon-color), -2px 0px 3px 0px var(--neon-color);
+
+}
+
+.card:hover .imagecard {
+    box-shadow: 6px 5px 17px 0 black;
+    animation: card 1s ease-in forwards;
+
+}
+
+.imagecard {
+    height: 200px;
+    width: 315px;
+    background-color: #111;
+
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+@keyframes card {
+    to {
+        transform: translateX(-350px);
+    }
+}
+
+@keyframes card2 {
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.imagecard img {
+    position: absolute;
+    width: 500px;
+    
+
+
+
+}
+
+.cardtext {
+    color: var(--primary-font-color);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 14px;
+    padding: 0 15px;
+    font-style: normal;
+    height: 200px;
+    width: 315px;
+}
+
+.cardtext div {
+    display: flex;
+    gap: 6px;
+}
+
+.cardtext div span {
+    background-color: #03a9f4;
+    border-radius: 15px;
+    width: 50px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.cardtext p {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-family: sans-serif;
+}
+.cardtext h1{
+    font-family: monospace;
+    font-size: 22px;
+
+}

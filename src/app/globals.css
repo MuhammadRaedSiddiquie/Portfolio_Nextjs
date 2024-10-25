@@ -5,6 +5,33 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: #121212;
+  --secondary-color: #121212;
+  --primary-font-color: #fff;
+  --secondary-font-color: #fff;
+  --neon-color: #04ffc3;
+  --stars-color:#fff;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #171717;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #fcfffe;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,8 +43,28 @@
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: #000;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+.euro{
+  font-family: Eurostile;
+}
+.franklin{
+  font-family: Franklin Gothic;
+}
+.dmsans{
+  font-family: 'DmSans';
+}
+.inter{
+  font-family: 'Inter';
+}
+.neon{
+  background-color: #04ffc3;
+}
+.monu{
+  font-family: monument extended;
 }
 
 @layer utilities {
@@ -25,3 +72,57 @@ body {
     text-wrap: balance;
   }
 }
+@layer base {
+  @font-face {
+    font-family: 'franklin';
+    src: url(/portfolio/public/FranklinGothic.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'euro';
+    src: url(/portfolio/public/eurostile.TTF) format('TTF');
+  }
+  @font-face {
+    font-family: 'dmsans';
+    src: url(/portfolio/public/DMSans-VariableFont_opsz\,wght.ttf) format('tff');
+  }
+  @font-face {
+    font-family: 'Inter';
+    src: url(/portfolio/public/Inter-VariableFont_opsz\,wght.ttf);
+  }
+  @font-face {
+    font-family: 'MonumentExtended-Regular';
+    src: url(/portfolio/public/MonumentExtended-Regular.otf);
+  }
+}
+
+@font-face {
+  font-family: Franklin Gothic;
+  src: url(/portfolio/public/FranklinGothic.ttf);
+}
+@font-face {
+  font-family: Eurostile;
+  src: url(/portfolio/public/eurostile.TTF);
+}
+@font-face {
+  font-family: 'DmSans';
+  src: url(/portfolio/public/DMSans-VariableFont_opsz\,wght.ttf);
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(/portfolio/public/Inter-VariableFont_opsz\,wght.ttf) format(ttf);
+}
+@font-face {
+  font-family: 'MonumentExtended-Regular';
+  src: url(/portfolio/public/MonumentExtended-Regular.otf) format(otf);
+}
+@font-face {
+  font-family: 'Monument-ultra';
+  src: url(/portfolio/public/MonumentExtended-Ultrabold.otf);
+}
+@font-face{
+  font-family:monument extended;
+  font-style:normal;
+  font-weight:400;
+  src:local('Monument Extended'),url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Regular.woff) format('woff')}
+  
+@font-face{font-family:monument extended ultra;font-style:normal;font-weight:800;src:local('Monument Extended'),url(https://fonts.cdnfonts.com/s/19595/MonumentExtended-Ultrabold.woff) format('woff')}
