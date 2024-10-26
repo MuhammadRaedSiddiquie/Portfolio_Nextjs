@@ -1,13 +1,13 @@
 'use client'
 import React from 'react'
 import Style from "./skills.module.css"
-import { useState , useEffect} from 'react';
+import { useState , useEffect,useRef} from 'react';
 
 
 function Skills() {
   const [count, setCount] = useState(0);
   const [angle, setAngle] = useState(0);
-  const spinner = document.getElementById('carousel')
+  const spinnerRef=useRef<HTMLDivElement  | null>(null)
 
   const incrementCount = () => {
     setCount(prevState => prevState + 1);
@@ -19,14 +19,17 @@ function Skills() {
   };
 
   useEffect(()=>{
-    spinner?.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
-  },[spinner,angle])
+    if(spinnerRef!==null){
+          spinnerRef.current.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
+
+    }
+  },[spinnerRef,angle])
 
   return (
     <section className={Style.section}>
       <h1>SKILLS</h1>
       <div className={Style.scene}>
-        <div className={Style.carousel} id='carousel'>
+        <div ref={spinnerRef} className={Style.carousel} id='carousel'>
           <div className={`${Style.carousel__cell} ${Style[count % 8 == 0 ? "shadow" : "noshadow"]}`}>
 
             <p >  With a strong foundation in Python, I leverage its versatility to build efficient back-end solutions. From scripting and automation to building full-fledged web applications, I use Python`&lsquo;`s extensive libraries and frameworks to create scalable and maintainable code.</p>
