@@ -19,7 +19,7 @@ function Skills() {
   };
 
   useEffect(()=>{
-    if(spinnerRef!==null){
+    if(spinnerRef.current!==null){
           spinnerRef.current.setAttribute("style", "-webkit-transform: rotateY(" + angle + "deg); -moz-transform: rotateY(" + angle + "deg); transform: rotateY(" + angle + "deg);");
 
     }
