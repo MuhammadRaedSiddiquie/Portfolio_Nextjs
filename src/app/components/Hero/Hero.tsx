@@ -16,7 +16,7 @@ function Hero() {
         <Stars></Stars>
         {/* <div className="profile"><Image src="" layout="fill" alt=""></Image></div> */}
         <div className="flex flex-col gap-2">
-          <h2 style={{fontFamily:'monument extended',fontWeight:'100'}} className="text-3xl text-[#04ffc3] select-none">Hi! I`&lsquo;m</h2>
+          <h2 style={{fontFamily:'monument extended',fontWeight:'100'}} className="text-3xl text-[#04ffc3] select-none">Hi! I&lsquo;m</h2>
           <h1 style={{fontFamily:'monument extended'}} className="text-white text-[2.5rem] select-none">MUHAMMAD RAED</h1>
           <h3 className="text-white text-[18px] select-none">Learning Front-End Web Development passionate about creating interactive applications and
             experiences on the web.</h3>
