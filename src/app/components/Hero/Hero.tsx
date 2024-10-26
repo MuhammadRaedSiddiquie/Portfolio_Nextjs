@@ -40,7 +40,7 @@ function Hero() {
 
       </aside>
       <aside className="h-[28rem] w-[30rem] flex items-center justify-center">
-        <div className="w-full h-full overflow-hidden flex items-start justify-center"><Image className="z-10" src="/person.PNG" width={300} height={400} alt=""></Image></div>
+        <div className="w-full h-full overflow-hidden flex items-start justify-center"><Image className="z-10" src="/person.png" width={300} height={400} alt=""></Image></div>
       </aside>
 
     </section>
