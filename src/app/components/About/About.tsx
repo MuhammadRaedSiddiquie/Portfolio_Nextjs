@@ -12,7 +12,7 @@ function About() {
 
 
   return (
-    <section className={Style.section}>
+    <section className={Style.section} id='about'>
       <h1>ABOUT ME</h1>
       <div className='flex items-center w-[74%] h-[55vh] items-center justify-between'>
         <div className='flex flex-col items-center justify-between w-[22%] h-[100%] z-10'>

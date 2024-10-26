@@ -4,7 +4,7 @@ import Image from "next/image"
 
 function Projects() {
   return (
-    <section className={Style.section}>
+    <section className={Style.section} id='projects'>
       <h1>PROJECTS</h1>
       <div className={Style.projects}>
         <div className={Style.card}>

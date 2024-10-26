@@ -26,7 +26,7 @@ function Skills() {
   },[spinnerRef,angle])
 
   return (
-    <section className={Style.section}>
+    <section className={Style.section} id='skills'>
       <h1>SKILLS</h1>
       <div className={Style.scene}>
         <div ref={spinnerRef} className={Style.carousel} id='carousel'>

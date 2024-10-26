@@ -11,7 +11,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 function Hero() {
   return (
-    <section className="w-full h-[94vh] flex items-center justify-center bg-[#121212] gap-[10vw]">
+    <section className="w-full h-screen flex items-center justify-center bg-[#121212] gap-[10vw] pt-12" id='home'>
       <aside className="flex bg-[#0a0a0a] flex-col h-[26rem] w-[34rem] rounded-2xl justify-evenly px-4 shadow-[inset_-12px_0_13px_-10px] shadow-[#04ffc3] border-r-[2px] border-[#64ffda]">
         <Stars></Stars>
         {/* <div className="profile"><Image src="" layout="fill" alt=""></Image></div> */}

@@ -6,7 +6,7 @@ import { faLink} from '@fortawesome/free-solid-svg-icons'
 
 function Contact() {
   return (
-    <section className={Style.section}>
+    <section className={Style.section} id='contact'>
       <div id="myForm" className={Style.skillsform}>
         <div className={Style.headform}>
           <h1>GOT A PROJECT?</h1>
